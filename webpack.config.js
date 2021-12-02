@@ -13,9 +13,13 @@ module.exports = {
   output: {
     filename: "[name].[fullhash].bunde.js",
     path: path.resolve(__dirname, "./build"),
+    publicPath: "/",
   },
   optimization: {
     minimizer: ["...", new CssMinimizerPlugin()],
+  },
+  devServer: {
+    historyApiFallback: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
