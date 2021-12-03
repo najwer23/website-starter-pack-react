@@ -35,6 +35,12 @@ $ yarn build
 $ yarn deploy
 ```
 
+### Serve build 
+```
+serve -s build
+http://192.168.1.32:3000
+```
+
 ### Author
 Mariusz Najwer
 [https://najwer23.github.io/](https://najwer23.github.io/)
